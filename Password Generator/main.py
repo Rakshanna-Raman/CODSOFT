@@ -1,33 +1,34 @@
-import secrets
+import random
 
-def make_password(w1, w2, w3, length):
-    # Standardize inputs: strip spaces and capitalize
-    word1 = w1.strip().capitalize()
-    word2 = w2.strip().capitalize()
-    word3 = w3.strip().capitalize()
-    
-    pwd = f"{word1}_{word2}_{word3}"
-    if len(pwd) < length:
-        while len(pwd) < length:
-            pwd += str(secrets.randbelow(10))
-            
-    elif len(pwd) > length:
-        pwd = pwd[:length]
-        
-    if pwd.endswith('_'):
-        if len(pwd) == len(word1) + 1:
-            pwd = pwd[:-1] + word2[0]
-        else:
-            pwd = pwd[:-1] + word3[0]
-        
-    return pwd
-
-# --- Main Program ---
 print("=== Smart Memorable Password Generator ===")
-w1 = input("Word 1: ")
-w2 = input("Word 2: ")
-w3 = input("Word 3: ")
-num_chars = int(input("Desired Length: "))
 
-result = make_password(w1, w2, w3, num_chars)
-print(f"\nYour Password: {result}")
+w1 = input("Enter Word 1: ").strip().capitalize()
+w2 = input("Enter Word 2: ").strip().capitalize()
+w3 = input("Enter Word 3: ").strip().capitalize()
+
+# Complexity
+use_numbers = input("Add numbers? (yes/no): ").lower() == "yes"
+use_symbols = input("Add symbols? (yes/no): ").lower() == "yes"
+
+# Desired length
+length = int(input("Desired Password Length: "))
+
+# Combine words
+password = w1 + w2 + w3
+extra_chars = ""
+
+if use_numbers:
+    extra_chars += "0123456789"
+
+if use_symbols:
+    extra_chars += "!@#$%^&*"
+    
+while len(password) < length:
+    if extra_chars:
+        password += random.choice(extra_chars)
+    else:
+        password += random.choice("0123456789")
+# Trim if too long
+password = password[:length]
+
+print("\nGenerated Password:", password)
