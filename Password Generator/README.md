@@ -33,10 +33,15 @@ The user can also specify the desired password length, and the program adjusts t
 === Smart Memorable Password Generator ===
 
 Enter Word 1: Rakshanna
+
 Enter Word 2: CodSoft
+
 Enter Word 3: Intern
+
 Add numbers? (yes/no): yes
+
 Add symbols? (yes/no): yes
+
 Desired Password Length: 12
 
 ## Sample Output
