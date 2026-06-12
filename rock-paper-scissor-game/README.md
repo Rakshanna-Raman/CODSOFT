@@ -37,6 +37,45 @@ The player enters a unique Gaming ID and chooses between Rock, Paper, or Scissor
 4. Run the Python file using:
 python main.py
 
+## sample output 
+=============================================
+      WELCOME TO THE CYBER ARENA
+        ROCK ~ PAPER ~ SCISSORS
+=============================================
+Enter your Gaming ID: raksha_13
+
+Score -> raksha_13: 0 | CyberBot-3000: 0
+Choose rock, paper, or scissors: paper
+raksha_13 chose: paper
+CyberBot-3000 chose: paper
+It's a Tie!
+
+Score -> raksha_13: 0 | CyberBot-3000: 0
+Choose rock, paper, or scissors: rock
+raksha_13 chose: rock
+CyberBot-3000 chose: paper
+CyberBot-3000 wins this round!
+
+Score -> raksha_13: 0 | CyberBot-3000: 1
+Choose rock, paper, or scissors: paper
+raksha_13 chose: paper
+CyberBot-3000 chose: rock
+raksha_13 wins this round!
+
+Score -> raksha_13: 1 | CyberBot-3000: 1
+Choose rock, paper, or scissors: scissors
+raksha_13 chose: scissors
+CyberBot-3000 chose: paper
+raksha_13 wins this round!
+
+===== FINAL RESULT =====
+🏆 Congratulations raksha_13! You won the match!
+
+Play again? (yes/no): no
+
+Thanks for playing, raksha_13
+
+
 ## Learning Outcomes
 
 This project helped me practice:
