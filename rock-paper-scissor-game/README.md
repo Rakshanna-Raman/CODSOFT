@@ -39,36 +39,58 @@ python main.py
 
 ## sample output 
 =============================================
+
       WELCOME TO THE CYBER ARENA
+      
         ROCK ~ PAPER ~ SCISSORS
+        
 =============================================
+
 Enter your Gaming ID: raksha_13
 
 Score -> raksha_13: 0 | CyberBot-3000: 0
+
 Choose rock, paper, or scissors: paper
+
 raksha_13 chose: paper
+
 CyberBot-3000 chose: paper
+
 It's a Tie!
 
 Score -> raksha_13: 0 | CyberBot-3000: 0
+
 Choose rock, paper, or scissors: rock
+
 raksha_13 chose: rock
+
 CyberBot-3000 chose: paper
+
 CyberBot-3000 wins this round!
 
 Score -> raksha_13: 0 | CyberBot-3000: 1
+
 Choose rock, paper, or scissors: paper
+
 raksha_13 chose: paper
+
 CyberBot-3000 chose: rock
+
 raksha_13 wins this round!
 
+
 Score -> raksha_13: 1 | CyberBot-3000: 1
+
 Choose rock, paper, or scissors: scissors
+
 raksha_13 chose: scissors
+
 CyberBot-3000 chose: paper
+
 raksha_13 wins this round!
 
 ===== FINAL RESULT =====
+
 🏆 Congratulations raksha_13! You won the match!
 
 Play again? (yes/no): no
@@ -90,5 +112,5 @@ This project helped me practice:
 * Logical problem-solving skills
 
 ## Author
-Rakshanna R
+Rakshanna R ,
 Developed as part of the CODSOFT Python Internship.
