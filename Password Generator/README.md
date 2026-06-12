@@ -17,14 +17,16 @@ The user can also specify the desired password length, and the program adjusts t
 
 ## Technologies Used
 
-* Python 3
-* Random Module
+**Language:** Python 3
+**Libraries:** Random Module
+**Tools & Platforms:** VS Code, Git, GitHub
+
 
 ## How to Run
 
 1. Clone or download the repository.
 2. Open the project in Visual Studio Code.
-3. Run the Python file:
+3. Run the Python file:  main.py
 4. Enter the required inputs when prompted.
 5. View the generated password.
 
@@ -71,5 +73,5 @@ This project helped me understand:
 
 ## Author
 
-Rakshanna Raman
+Rakshanna R,
 Developed as part of the CODSOFT Python Internship.
