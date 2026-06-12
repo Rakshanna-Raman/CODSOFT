@@ -1,34 +1,39 @@
 import random
 
-print("=== Smart Memorable Password Generator ===")
+print("=== Simple Memorable Password Generator ===")
 
+# 1. User Input: Get the base words from the user
 w1 = input("Enter Word 1: ").strip().capitalize()
 w2 = input("Enter Word 2: ").strip().capitalize()
 w3 = input("Enter Word 3: ").strip().capitalize()
+combined_words = w1 + w2 + w3
 
-# Complexity
+# 2. User Input: Get complexity choices and desired length
 use_numbers = input("Add numbers? (yes/no): ").lower() == "yes"
 use_symbols = input("Add symbols? (yes/no): ").lower() == "yes"
+desired_length = int(input("Total length: "))
 
-# Desired length
-length = int(input("Desired Password Length: "))
-
-# Combine words
-password = w1 + w2 + w3
-extra_chars = ""
-
+# 3. Create the endings if the user wants them
+ending = ""
 if use_numbers:
-    extra_chars += "0123456789"
-
+    ending += random.choice("0123456789")
 if use_symbols:
-    extra_chars += "!@#$%^&*"
-    
-while len(password) < length:
-    if extra_chars:
-        password += random.choice(extra_chars)
-    else:
-        password += random.choice("0123456789")
-# Trim if too long
-password = password[:length]
+    ending += random.choice("!@#$%^&*")
 
-print("\nGenerated Password:", password)
+# 4. Cut the words to make perfect room for the ending
+letters_needed = desired_length - len(ending)
+sliced_words = combined_words[:letters_needed]
+
+# 5. Combine them together
+final_password = sliced_words + ending
+
+# 6. Warn the user if the combined words were too short to reach the target length
+if len(final_password) < desired_length:
+    print(
+        "\nNote: The words provided were too short to reach the desired length!"
+    )
+
+# 7. Print the final result
+print("\n-----------------------------")
+print("Your Generated Password:", final_password)
+print("-----------------------------")
