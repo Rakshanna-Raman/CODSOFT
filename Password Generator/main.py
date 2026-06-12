@@ -36,3 +36,4 @@ if len(final_password) < desired_length:
 # 7. Print the final result
 print("\n-----------------------------")
 print("Your Generated Password:", final_password)
+print("\n-----------------------------")
