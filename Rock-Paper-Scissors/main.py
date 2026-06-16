@@ -48,6 +48,7 @@ while play_again == "yes":
             computer_score += 1
 
     print("\n===== FINAL RESULT =====")
+    print(f"Final Score -> {user_id}: {user_score} | {computer_id}: {computer_score}")
 
     if user_score > computer_score:
         print(f"🏆 Congratulations {user_id}! You won the match!")
