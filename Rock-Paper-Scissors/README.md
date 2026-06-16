@@ -91,6 +91,8 @@ raksha_13 wins this round!
 
 ===== FINAL RESULT =====
 
+Final Score -> raksha_13: 2 | CyberBot-3000: 1
+
 🏆 Congratulations raksha_13! You won the match!
 
 Play again? (yes/no): no
