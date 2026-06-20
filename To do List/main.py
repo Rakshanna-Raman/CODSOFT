@@ -4,11 +4,11 @@ from tkinter import messagebox
 # Wednesday Title Card Theme Colors
 BG_COLOR = "#230230"       
 BOX_COLOR = "#886C94"      
-TEXT_COLOR = "#09090A"    
-ACCENT_COLOR = "#da0f0f"  
+TEXT_COLOR = "#F5F1FF"    
+ACCENT_COLOR = "#FFD166"  
 window = tk.Tk()
-window.title("Nevermore Mission Log 🪄")
-window.geometry("400x550")
+window.title("Nevermore Mission Log")
+window.geometry("500x550")
 window.configure(bg=BG_COLOR)
 
 # Simple Functions (Easy to explain line-by-line!)
@@ -46,41 +46,40 @@ def delete_task():
         task_listbox.delete(selected[0])
 
 # --- USER INTERFACE ---
-
 title_label = tk.Label(
     window, 
-    text="Nevermore Mission Log", 
-    font=("Niagara Solid", 20,), 
+    text="🪶Nevermore Mission Log 🪶", 
+    font=("Georgia", 20,"bold"), 
     bg=BG_COLOR, 
     fg=TEXT_COLOR
 )
 title_label.pack(pady=15)
 
 # Profile Setup
-tk.Label(window, text="Enter Student Name:", font=("Ink Free", 12, "bold"), bg=BG_COLOR, fg=TEXT_COLOR).pack()
+tk.Label(window, text="Enter Scholar Name:", font=("Georgia", 12, "bold"), bg=BG_COLOR, fg=TEXT_COLOR).pack()
 name_entry = tk.Entry(window, width=25, bg=BOX_COLOR, fg=TEXT_COLOR, insertbackground=TEXT_COLOR, relief=tk.FLAT)
 name_entry.pack(pady=5)
 
-tk.Button(window, text="Enter Academy", font=("Ink Free", 12), bg=BOX_COLOR, fg=TEXT_COLOR, command=set_greeting).pack(pady=5)
+tk.Button(window, text="🏰Enter Academy", font=("Segoe UI", 10, "bold"), bg=BOX_COLOR, fg=TEXT_COLOR, command=set_greeting).pack(pady=5)
 
-welcome_label = tk.Label(window, text="Welcome, Scholar: ______ 🪄", font=("Ink Free", 11, "italic"), bg=BG_COLOR, fg=ACCENT_COLOR)
+welcome_label = tk.Label(window, text="Welcome, Scholar: ______ ⭐", font=("Georgia", 12, "bold"), bg=BG_COLOR, fg=ACCENT_COLOR)
 welcome_label.pack(pady=10)
 
 # Mission Input
-tk.Label(window, text="Enter Log Entry:", font=("Ink Free", 10, "italic"), bg=BG_COLOR, fg=TEXT_COLOR).pack()
+tk.Label(window, text="Mission Entry:", font=("Georgia", 12, "bold"), bg=BG_COLOR, fg=TEXT_COLOR).pack()
 task_entry = tk.Entry(window, width=32, bg=BOX_COLOR, fg=TEXT_COLOR, insertbackground=TEXT_COLOR, relief=tk.FLAT)
 task_entry.pack(pady=5)
 
 # Control Center Buttons
-tk.Button(window, text="Add Mission", font=("Ink Free", 10), width=18, bg=BOX_COLOR, fg=TEXT_COLOR, command=add_task).pack(pady=3)
-tk.Button(window, text="Update Mission", font=("Ink Free", 10), width=18, bg=BOX_COLOR, fg=TEXT_COLOR, command=update_task).pack(pady=3)
-tk.Button(window, text="Complete Mission", font=("Ink Free", 10), width=18, bg=BOX_COLOR, fg=TEXT_COLOR, command=complete_task).pack(pady=3)
-tk.Button(window, text="Banish Log (Delete)", font=("Ink Free", 10), width=18, bg=BOX_COLOR, fg=TEXT_COLOR, command=delete_task).pack(pady=3)
+tk.Button(window, text="Add Mission", font=("Segoe UI", 10, "bold"), width=18, bg=BOX_COLOR, fg=TEXT_COLOR, command=add_task).pack(pady=3)
+tk.Button(window, text="Update Mission", font=("Segoe UI", 10, "bold"), width=18, bg=BOX_COLOR, fg=TEXT_COLOR, command=update_task).pack(pady=3)
+tk.Button(window, text="Complete Mission", font=("Segoe UI", 10, "bold"), width=18, bg=BOX_COLOR, fg=TEXT_COLOR, command=complete_task).pack(pady=3)
+tk.Button(window, text="🪶Banish Log", font=("Segoe UI", 10, "bold"), width=18, bg=BOX_COLOR, fg=TEXT_COLOR, command=delete_task).pack(pady=3)
 
 # Log Display Box
 task_listbox = tk.Listbox(
     window, 
-    width=38, 
+    width=35, 
     height=9, 
     font=("Courier", 10), 
     bg=BOX_COLOR, 
