@@ -63,11 +63,11 @@ Banish Log
 
 Mission Log:
 
-• Complete Maths Assignment
+• Edit the Novel manuscript
 
 • Practice SQL Queries
 
-• Dance Choerography - United Grooves Audition
+• Choerography for United Grooves Audition
 
 ✓ [DONE] Submit CODSOFT Project
 

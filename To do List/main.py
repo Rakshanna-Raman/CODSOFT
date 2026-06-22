@@ -1,7 +1,6 @@
 import tkinter as tk
 from tkinter import messagebox
 
-# Wednesday Title Card Theme Colors
 BG_COLOR = "#230230"       
 BOX_COLOR = "#886C94"      
 TEXT_COLOR = "#F5F1FF"    
@@ -11,7 +10,7 @@ window.title("Nevermore Mission Log")
 window.geometry("500x550")
 window.configure(bg=BG_COLOR)
 
-# Simple Functions (Easy to explain line-by-line!)
+# Functions 
 def set_greeting():
     name = name_entry.get()
     welcome_label.config(text=f"Welcome, Scholar: {name} 🪄")
